@@ -75,7 +75,7 @@ void setup() {
   Serial.print(WiFi.localIP());
   local_IP = WiFi.localIP().toString();
   Serial.println("' to connect");
-  Blynk.begin(auth, ssid, password, "blynk.iot-cm.com", 8080);
+  Blynk.begin(auth, ssid, password);
 }
 
 void loop() {
